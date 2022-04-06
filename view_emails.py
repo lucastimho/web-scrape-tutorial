@@ -12,3 +12,6 @@ print(M.select("inbox"))
 typ, data = M.search(None, 'Subject "New Test Python')
 email_id = data[0]
 result_data, email_data = M.fetch(email_id, '{RFC822}')
+raw_email = email_data[0][1]
+raw_email_string = raw_email.decode("utf-8")
+email_message = email.message_from_string(raw_email_string)
