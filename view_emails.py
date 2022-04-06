@@ -9,3 +9,4 @@ M.login(email_user, password)
 print(M.list())
 print(M.select("inbox"))
 typ, data = M.search(None, 'Subject "New Test Python')
+email_id = data[0]
