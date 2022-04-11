@@ -1,7 +1,6 @@
 import email
 import imaplib
 import getpass
-from unittest import result
 
 M = imaplib.IMAP4_SSL("imap.gmail.com")
 email_user = getpass.getpass("Enter email: ")
